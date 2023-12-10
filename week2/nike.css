@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+.nav1 img{
+    width: 60px;
+}
+.nav{
+    width: 100%;
+}
+.nav_main{
+    display: flex;
+    align-items: center;
+    padding: 1rem 4rem;
+} 
+.nav1{
+    width: 20%;
+}
+.nav2{
+    width: 80%;
+}
+.nav2 li{
+    padding: 0 1rem;
+}
+.nav2 a{
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+} 
+.home{
+    width: 100%;
+}
+
+.home_main{
+    display: flex;
+    align-items: center;
+}
+.home1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.home2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.home2 h1{
+    
+    font-size: 2rem;
+    gap: 20px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+.home2 p{
+    padding: 1 rem 6 rem 1 rem 0;
+    font-weight: 500;
+}
+.home_buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.adc{
+    background-color: white;
+    color: black;
+    padding: 15px 150px; 
+    border: solid;
+    margin-right: 50px;
+    font-size: 16px; 
+    margin-bottom: 20px;
+}
+.dropdown-container label{
+    font-size: 16px;
+}
+.dropdown-container select{
+    padding: 10px 20px; 
+    margin-right: 50px;
+    font-size: 16px; 
+}
+.bn{
+    background-color: black;
+    color: white;
+    padding: 15px 165.6px; 
+    border: none;
+    margin-right: 50px;
+    font-size: 16px; 
+    margin-bottom: 20px;
+}
+.atw{
+    padding-top: 150px;
+    background-color: black;
+    color: white;
+    padding: 15px 134px; 
+    border: none;
+    margin-right: 50px;
+    font-size: 16px; 
+    gap: 50px;
+}
+.dropdown-container {
+    display: flex;
+    gap: 10px;
+    padding: 30px 150px; 
+    border: none;
+    margin-right: 50px;
+    font-size: 16px;
+    
+}
+
+label {
+    font-weight: bold;
+}
+select {
+    padding: 8px;
+    font-size: 14px;
+}
+.home1 img{
+    width: 700px;
+    height: auto;
+}
