@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 18px;
+            margin: 0;
+            height: 100vh;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+        img{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <img src="heart.webp" alt="heart">
+    <p>Thank You</p>
+    <p id="feedbackText"></p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const feedbackType = urlParams.get('feedback');
+
+            const feedbackTextElement = document.getElementById('feedbackText');
+            if (feedbackType) {
+                feedbackTextElement.textContent = `Feedback: ${feedbackType}`;
+            } else {
+                feedbackTextElement.textContent = 'No feedback selected.';
+            }
+        });
+    </script>
+</body>
+</html>

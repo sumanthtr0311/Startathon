@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const feedbackOptions = document.querySelectorAll('.un, .neu, .hap');
+
+            feedbackOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    const feedbackType = this.textContent.trim();
+                    window.location.href = `thankyou.html?feedback=${feedbackType}`;
+                });
+            });
+        });
+    </script>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        p {
+            margin-top: 200px;
+        }
+
+        .images {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            height: 100px;
+            width: auto;
+        }
+
+        .un{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            cursor: pointer; 
+            margin-right: 50px;
+        }
+        .neu{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            cursor: pointer; 
+            margin-right: 50px;
+        }
+        .hap {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            cursor: pointer; 
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <p>Your Feedback 😉</p>
+    <div class="images">
+        <div class="un">
+            <img src="sad.webp" alt="sad">
+            Unhappy
+        </div>
+        <div class="neu">
+            <img src="neutral.webp" alt="neutral">
+            Neutral
+        </div>
+        <div class="hap">
+            <img src="happy.webp" alt="">
+            Satisfied
+        </div>
+    </div>
+
+    <button>Send Feedback</button>
+</body>
+</html>
